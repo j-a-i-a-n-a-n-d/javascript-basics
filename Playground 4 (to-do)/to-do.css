@@ -1,0 +1,27 @@
+.root{
+    background-color: #15133C;
+    margin: 0px;
+    padding: 0px;;
+}
+h1{
+    margin: 0.4em;
+    color:#EC994B;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    letter-spacing: 4px;
+}
+#adding-tasks{
+    display: inline-flex;
+    height: 3em;
+    width : 25em;
+    background-color: #73777B;
+    border: none;
+    border-radius: 5px;
+}
+#add-task-button{
+    height:3.1em;
+    width : 7em;
+    background-color: #73777B;
+    border: none;
+    border-radius: 5px;
+}

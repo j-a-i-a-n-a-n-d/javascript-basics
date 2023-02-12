@@ -1,0 +1,45 @@
+body
+{
+    background: rgb(234,105,32);
+    background: linear-gradient(90deg, rgba(234,105,32,1) 19%, rgba(255,175,0,1) 65%, rgba(255,191,88,1) 89%);
+}
+.headheading
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading1
+{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media(min-width : 776px)
+{
+    .heading1{
+    font-size: 40px;
+    font-weight: bolder;
+    }
+    .heading-img{
+        width: 160px;
+        height: 160px;
+    }
+}
+.heading-img{
+    border-radius: 15px;
+}
+button
+{
+    margin: 80px;
+    width: 120px;
+}

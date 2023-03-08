@@ -11,7 +11,6 @@ async function dadsJoke()
     {
         const response = await fetch('https://dad-jokes.p.rapidapi.com/random/joke/png', options)
         const dataRetrieved = await response.json();
-        console.log(dataRetrieved)
         return dataRetrieved
     }
     catch (err)
@@ -25,9 +24,13 @@ async function dataProcessing()
 {
     console.log("hello");
     const data = await dadsJoke();
-    const myJSON = JSON.stringify(data);
-    console.log(myJSON)
+    console.log(data)
+    let array = Object.entries(data).map(([key, value]) => [key, value]);
+    console.log(array);
+    console.log(array[0]);
+    console.log(array[1][1].setup);
+    console.log(array[1][1].punchline);
+    console.log(array[1][1].image);
     const ele = document.getElementById("filler")
-    ele.innerHTML=myJSON
 }
 document.addEventListener('click', dataProcessing);
